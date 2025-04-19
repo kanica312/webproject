@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MY PORTFOLIO PROJECT</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    
+    
+  }
+
+  .container, .about, .skillbox, .projectbox, .testimonalbox, .contactbox {
+    margin: 20px !important;
+    padding: 20px !important;
+  }
+
+  .profile {
+    width: 70px !important;
+    height: 70px !important;
+margin-left:5px;
+
+
+  }
+
+  .submit, .backtotop {
+    width: 20% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top:5px;
+    
+  }
+
+  .projectimg {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .gallery {
+    flex-direction: column;
+    
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #mode {
+    position: fixed;
+bottom:2px;
+    
+  }
+}
+                   /*giving background image to website*/
+                          
+body{
+background-image:url('https://tse3.mm.bing.net/th?id=OIP.snOCo7y8gBUb7r0Qw9OJMwHaEK&pid=Api&P=0&h=180');
+object-fit:cover;
+}
+
+
+                                      /*box of home*/
+                           
+.container{
+text-align:center;
+margin:0 auto 20px;
+border:5px solid black;
+padding:30px 40px;
+background-color:white;
+border-radius:20px;'
+
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+object-fit:cover;
+font-size: 1.4rem;
+font-size:60px;
+font-family:serif;
+margin-top:100px;
+margin-bottom:100px;
+}
+.container:hover {
+animation: zoomIn 1s infinite forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+
+                                             /*css of profile image*/
+                                 
+.profile{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:20px solid #fff;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-color:
+margin-bottom:15px;
+margin-top:10px;
+
+}
+.profile:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(0.5);
+}
+}
+
+                                    /*box of about section*/
+                              
+.about{
+border:5px solid black;
+width:auto;
+height:auto;
+padding:20px;
+
+
+text-align:center;
+margin-left:100px;
+margin-right:100px;
+border:5px solid black;
+padding:30px 40px;
+background-image:;
+border-radius:20px;'
+
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+
+
+margin-bottom:100px;
+}
+.about:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+                                         /*box of skills*/
+                            
+.skillbox{
+border:5px solid black;
+width:auto;
+height:auto;
+padding:20px;
+
+
+text-align:center;
+margin-left:100px;
+margin-right:100px;
+border:5px solid black;
+padding:30px 40px;
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+border-radius:20px;'
+
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-color:#fdfbfb
+font-size: 5rem;
+font-family:serif;
+margin-top:100px;
+margin-bottom:100px;
+}
+.skillbox:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+
+
+                              /*box of projects*/
+
+.projectbox{
+border:5px solid black;
+width:auto;
+height:auto;
+padding:20px;
+
+
+
+margin-left:100px;
+margin-right:100px;
+border:5px solid black;
+background-color:white;
+border-radius:20px;'
+
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+
+font-family:serif;
+margin-top:100px;
+margin-bottom:100px;
+
+}
+.projectbox:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.05);
+}
+}
+
+
+                         /*css of making projects align side by side*/
+
+.gallery{
+display:flex;
+flex-direction:row;
+gap:25px;
+flex-wrap:nowrap;
+overflow-x:auto;
+scroll-snap-type: x mandatory;    
+}
+
+
+.project{
+flex:0 0 auto;
+scroll-snap-align:start;
+text-align:center;
+max-width:200px;
+margin-left:100px;
+}
+.projectimg{
+display:block;
+margin-top:40px;
+width:300px;
+height:300px;
+object-fit:contain;
+background-color:rgba(0,0,0,0.1);
+backdrop-filter:blur(10px);
+border:10px solid black;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);}
+.projectimg:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.05);
+}
+}
+
+             /*css of making figurecaption*/
+.project figcaption{
+
+color: black;
+font-family: 'Poppins', sans-serif; 
+margin-top:10px;
+margin-left:75px;
+padding: 0;
+line-height: 1.6;
+
+
+}
+
+                              /*box of testimonals*/
+
+.testimonalbox{border:5px solid black;
+width:auto;
+height:auto;
+padding:20px;
+text-align:center;
+margin-left:100px;
+margin-right:100px;
+border:5px solid black;
+padding:30px 40px;
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+border-radius:20px;'
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-color:#fdfbfb
+margin-top:100px;
+margin-bottom:100px;
+}
+.testimonalbox:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+
+
+h1{
+font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  color: white;
+background-color:black;
+}
+
+                            /*css of font of testimonal*/
+#testimonials{
+text-align:center;
+font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #555;
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  margin: 1.5em 0;
+}
+
+
+                     /*css of form tags*/
+label{
+
+font-weight:bold;
+margin-left:4px;
+
+}
+input,textarea{
+border:3px solid black;
+margin:3px;
+padding:3px;
+border-radius:2px 2px;
+}
+              
+                           /*box of contact*/
+
+.contactbox{
+border:5px solid black;
+width:auto;
+height:auto;
+padding:20px;
+
+
+
+margin-left:100px;
+margin-right:100px;
+border:5px solid black;
+padding:30px 40px;
+background-color:white;
+border-radius:20px;'
+
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+font-family:serif;
+margin-top:100px;
+margin-bottom:80px;
+}
+.contactbox:hover {
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+
+                              /*css of button*/
+
+.submit
+{
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+margin-left:600px;
+
+border:5px solid black;
+padding:10px 10px;
+
+
+border-radius:10px;'
+width:300px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+background-color:#fdfbfb
+font-size: 2rem;
+font-family:serif;
+}
+
+button:hover{
+animation: zoomIn 1s forwards;
+
+}
+@keyframes zoomIn{
+to{
+transform:scale(1.1);
+}
+}
+
+              
+                                 /*css of making project heading in center*/
+#prohead{
+text-align:center;
+}
+
+                        /*css of link of resume*/
+.resume{
+color:black;
+font-weight;bold;
+font-size:18px;
+}
+.backtotop{
+background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');
+color:black;
+margin-left:400px;
+border:5px solid black;
+border-radius:10px;'
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+font-family:serif;
+}
+
+                     /*css of mode button*/
+#mode{
+border:1px solid black;
+margin-right:10px;
+width:100px;
+height:45px;
+text-align:center;
+border-radius:10%;'
+}
+
+
+
+</style>
+  </head>
+
+
+  <body>
+                                      <!--navbar-->
+
+
+    <h1 id="top">My Portfolio</h1>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#a">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#s">Skills</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+<li class="nav-item">
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+ </div>
+  </div>
+<button id="mode">Light mode</button>
+</nav>
+
+                                         <!--home-section-->
+
+
+
+<div class="container">
+<img src="img3.jpg" alt="kanica" class="profile">
+
+<p>Hi,myself kanica</p1>
+<h3>Developer || Coder</h3>
+
+</div>
+
+
+                                         <!--About-section-->
+
+
+
+<div class="about">
+<h1 id="a">About</h1>
+
+<p>I am a passionate and dedicated Bachelor of Computer Applications (BCA) student with a strong foundation in programming, web development, and software engineering. I have a keen interest in exploring new technologies and solving real-world problems through innovative solutions.
+
+With a solid understanding of languages like Java, and JavaScript, I enjoy building applications that enhance user experiences. I am also enthusiastic about database management.
+
+I am always eager to learn and grow, continuously honing my skills through projects and hands-on experience. My goal is to contribute to the tech industry by developing efficient, scalable, and impactful software solutions.</p>
+
+<span class="resume">My resume:<a href="resume.docx" target="_blank">Click here!</a></span>
+
+</div>
+
+                                           <!--Skill-section-->
+
+
+                      
+<div class="skillbox">
+<h1 id="s">Skills</h1>
+<div class="a">
+                                <!--progressbars from bootstrap--> 
+
+                 
+<!-- Previous markup -->
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 80%; background-color:black">HTML</div>
+</div>
+<br>
+
+<!-- New markup -->
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 80%; background-color:black">CSS</div>
+</div>
+<br>
+
+
+
+
+<!-- New markup -->
+<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+  <div class="progress-bar" style="width: 60%; background-color:black">BOOTSTRAP</div>
+</div><br>
+<!-- Previous markup -->
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%; background-color:black; aria-valuenow=0; aria-valuemin=0; aria-valuemax=100">JAVASCRIPT</div>
+</div>
+</div>
+</div>
+ 
+
+
+                                  <!--Projecr section-->
+
+
+<div class="projectbox">
+<h1 id="prohead">Projects</h1>
+
+<div id="Projects">
+<div class ="gallery">
+<figure class="project">
+<img src="menu.jpg" alt="menu" width="200px" class="projectimg">
+<figcaption>
+<strong>MENU</strong>
+<br>
+This is a menu of a cafe.I used only css and html here.
+</figcaption>
+</figure>
+<figure class="project">
+
+
+<img src="loginform.jpg" alt="form" width="200px" class="projectimg">
+<figcaption>
+<strong>LOGIN FORM</strong>
+<br>
+This is a simple login form.I used only css and html here.
+</figcaption>
+</figure>
+<figure class="project">
+
+<img src="table.jpg" alt="table" width="200px" class="projectimg">
+<figcaption>
+<strong>STUDENT DATA</strong>
+<br>
+This is a simple student data table.I used only css and html here.
+</figcaption>
+</figure>
+<figure class="project">
+
+<img src="grid.jpg" alt="table" width="200px" class="projectimg">
+<figcaption>
+<strong>GRIDBOX</strong>
+<br>
+This is a simple gridbox.I used only css and html here.
+</figcaption>
+</figure>
+</div>
+
+</div>
+</div>
+
+                           <!--Testiomonials sections-->
+
+
+<div class="testimonalbox">
+<h1>Testimonials</h1>
+<div id="testimonials">
+<img src="img8.jpg" alt="manasvi" class="profile">
+<p>As a student,kanica showed outstading learning and was completely dedicated to her work.Her contributions really healped our team</p>
+<i>-Manasvi(Student)</i>
+<br>
+<img src="robot.jpg" alt="manasvi" class="profile">
+<p>As a student,kanica showed outstading learning and was completely dedicated to her work.Her contributions really healped our team</p>
+<i>-Priya(Student)</i>
+<br>
+<img src="robot2.jpg" alt="manasvi" class="profile">
+<p>As a student,kanica showed outstading learning and was completely dedicated to her work.Her contributions really healped our team</p>
+<i>-Priya(Student)</i>
+
+</div>
+</div>
+
+                           <!--contact section-->
+<div class="contactbox">
+<h1 id="prohead">Contact</h1>
+<div class="a">
+<form>
+<div id="Contact"></div>
+<label for="name" >Name:</label>
+<br>
+<input type="text" id="name" placeholder="Enter your name" >
+<br><label for="email"  >Email:</label>
+<br>
+<input type="email" id="email"placeholder="Enter your email" >
+<br>
+<label for="sub" >Subject:</label>
+<br>
+<input type="text" id="sub"placeholder="Enter subject" >
+<br>
+<label for="msg" >Message:</label>
+<br>
+<textarea id="msg" placeholder="Enter your message"></textarea>
+<br>
+</div>
+</div>
+<button class="submit"type="button">SUBMIT</button>
+</form>
+<button class="backtotop"><a href="#top">BACK TO TOP</a></button>
+
+                                  <!--footer-->
+
+
+<div class="footer" style="background-color:white; margin-top:50px; padding: 20px; text-align: center;background-image:url('https://tse2.mm.bing.net/th?id=OIP.d0QiJZZeXNSczye3Ehf9RAHaHa&pid=Api&P=0&h=180');">
+<h3>Contact Me</h3>
+  <p>Email: <a href="mailto:10kanica10aalex@gmail.com">10kanica10aalex@gmail.com</a></p>
+  <p>Phone: <a href="tel:+9888051083"</a>+91 9888051083</p>
+<p>Linkedin: <a href="https://www.linkedin.com/in/kanica-sharma-90877b349?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"</a>Kanica sharma</p>
+  
+</div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+</script>
+<script src="port.js">
+
+</script>
+  </body>
+</html>
